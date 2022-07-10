@@ -1,2 +1,7 @@
-# geek_go_tasks
-go tasks for geek go lessons
+go进阶训练营作业
+
+第二周作业
+
+问： 我们在数据库操作的时候，比如 dao 层中当遇到一个 sql.ErrNoRows 的时候，是否应该 Wrap 这个 error，抛给上层。为什么，应该怎么做请写出代码？
+
+答： 应该Wrap这个error。记录具体sql操作导致sql.ErrNoRows的日志，方便归因。可以在处理错误的地方加入更详细的堆栈信息，方便定位以及解决问题。
